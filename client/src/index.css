@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  --color-bg: #1a1a1a;
+  --color-text: #e5e5e5;
+  --font-logo: Copperplate, Papyrus, fantasy;
 }
 
 *,
