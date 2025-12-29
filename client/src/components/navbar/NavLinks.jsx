@@ -1,15 +1,19 @@
 import { NavLink } from "react-router-dom";
 
-function NavLinks() {
+function NavLinks({ className, onClick }) {
+  const containerClass =
+    className || "flex gap-4 justify-center items-center mx-auto";
+
   return (
-    <div className="hidden md:flex gap-4 justify-center items-center mx-auto">
+    <div className={containerClass}>
       <NavLink
         to="/"
+        onClick={onClick}
         className={({ isActive }) =>
-          `inline-block transition-transform duration-200 ease-in-out ${
+          `transition-colors duration-200 ${
             isActive
-              ? "text-amber-600 font-bold text-lg"
-              : "text-gray-500  hover:text-white hover:scale-110"
+              ? "text-amber-600 font-bold"
+              : "text-gray-500  hover:text-amber-600"
           }`
         }
       >
@@ -17,11 +21,12 @@ function NavLinks() {
       </NavLink>
       <NavLink
         to="/about"
+        onClick={onClick}
         className={({ isActive }) =>
-          `inline-block transition-transform duration-200 ease-in-out ${
+          `transition-colors duration-200 ${
             isActive
-              ? "text-amber-600 font-bold text-lg"
-              : "text-gray-500  hover:text-white hover:scale-110"
+              ? "text-amber-600 font-bold"
+              : "text-gray-500  hover:text-amber-600"
           }`
         }
       >
