@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function NavLinks() {
   return (
-    <div className="flex gap-4 justify-center items-center mx-auto">
+    <div className="hidden md:flex gap-4 justify-center items-center mx-auto">
       <NavLink
         to="/"
         className={({ isActive }) =>
