@@ -22,7 +22,7 @@ function MobileMenuOverlay({ isOpen, onClose, children }) {
         aria-hidden="true"
       />
       <div
-        className={`absolute right-0 top-0 h-full w-3/4 max-w-sm transform bg-white shadow-xl transition-transform duration-300 ease-in-out ${
+        className={`absolute right-0 top-0 h-full w-3/4 max-w-sm transform bg-bg shadow-xl transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

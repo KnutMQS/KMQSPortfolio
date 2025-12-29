@@ -10,7 +10,7 @@ function Navbar() {
   const closeMenu = () => setIsOpen(false);
   return (
     <nav className="sticky top-0 z-50 flex w-full items-center justify-between border-solid border-b-2 border-amber-600 px-3 py-4 shadow-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between">
+      <div className="mx-auto flex max-w-7xl items-center justify-around">
         <Link
           to="/"
           className="text-2xl font-bold text-amber-600"
@@ -25,7 +25,7 @@ function Navbar() {
           <MobileMenuButton isOpen={isOpen} onClick={toggleMenu} />
         </div>
       </div>
-      <MobileMenuOverlay isOpen={isOpen} onClick={toggleMenu}>
+      <MobileMenuOverlay isOpen={isOpen} onClose={closeMenu}>
         <NavLinks
           className="flex flex-col items-center gap-6 text-xl"
           onClick={closeMenu}
