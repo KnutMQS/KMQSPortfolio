@@ -10,7 +10,7 @@ function Navbar() {
   const closeMenu = () => setIsOpen(false);
   return (
     <nav className="sticky top-0 z-50 w-full bg-bg px-3 py-4 shadow-sm after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-linear-to-r after:from-violet-500 after:to-fuchsia-500">
-      <div className="mx-auto flex max-w-7xl items-center justify-between">
+      <div className="mx-auto flex max-w-7xl items-center justify-center">
         <Link
           to="/"
           className="text-2xl font-bold text-transparent bg-clip-text bg-linear-to-r from-violet-500 to-fuchsia-500"
@@ -18,7 +18,7 @@ function Navbar() {
         >
           KMQS
         </Link>
-        <div className="hidden md:block md:gap-4 md:justify-center md:items-center md:mx-auto">
+        <div className="hidden md:block md:mx-auto">
           <NavLinks />
         </div>
         <div className="md:hidden">
