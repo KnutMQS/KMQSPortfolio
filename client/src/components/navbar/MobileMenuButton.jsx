@@ -4,7 +4,7 @@ function MobileMenuButton({ isOpen, onClick }) {
       onClick={onClick}
       aria-expanded={isOpen}
       aria-label="Toggle mobile menu"
-      className="group relative left-25 z-50 flex h-10 w-10 flex-col items-center justify-center rounded-md border-2 border-amber-600 bg-bg p-2 focus:outline-none"
+      className="group relative left-25 z-50 flex h-8 w-8 flex-col items-center justify-center rounded-md border-2 border-amber-600 bg-bg p-2 focus:outline-none"
     >
       <div
         className={`h-0.5 w-6 rounded bg-amber-500 transition-all duration-300 ease-out ${
