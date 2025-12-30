@@ -9,11 +9,11 @@ function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
   return (
-    <nav className="sticky top-0 z-50 flex w-full items-center justify-between border-solid border-b-2 border-amber-600 px-3 py-4 shadow-sm">
+    <nav className="sticky top-0 z-50 flex w-full items-center justify-between border-solid border-b-2 bg-bg border-fuchsia-800 px-3 py-4 shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-around">
         <Link
           to="/"
-          className="text-2xl font-bold text-amber-600"
+          className="text-2xl font-bold text-transparent bg-clip-text bg-linear-to-r from-violet-500 to-fuchsia-500"
           onClick={closeMenu}
         >
           KMQS
