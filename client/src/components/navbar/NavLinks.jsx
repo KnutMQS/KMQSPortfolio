@@ -12,8 +12,8 @@ function NavLinks({ className, onClick }) {
         className={({ isActive }) =>
           `transition-colors duration-200 ${
             isActive
-              ? "text-amber-600 font-bold"
-              : "text-gray-500  hover:text-amber-600"
+              ? "text-fuchsia-500 text-xl font-bold"
+              : "text-gray-400  hover:text-fuchsia-500 hover:scale-110"
           }`
         }
       >
@@ -25,8 +25,8 @@ function NavLinks({ className, onClick }) {
         className={({ isActive }) =>
           `transition-colors duration-200 ${
             isActive
-              ? "text-amber-600 font-bold"
-              : "text-gray-500  hover:text-amber-600"
+              ? "text-fuchsia-500 font-bold"
+              : "text-gray-400 hover:text-fuchsia-500 hover:scale-110"
           }`
         }
       >
