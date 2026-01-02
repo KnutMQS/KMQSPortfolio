@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const getLinkClass = ({ isActive }) =>
-  `rounded-md px-1 focus:outline-none focus:ring-2 focus:ring-inset-2 focus:ring-blue-600 transition-all duration-200 ${
+  `rounded-md px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset-2 focus-visible:ring-blue-600 transition-all duration-200 ${
     isActive
       ? "text-fuchsia-500 font-bold"
       : "text-gray-400  hover:text-fuchsia-500"
