@@ -26,7 +26,7 @@ function MobileMenuOverlay({ isOpen, onClose, children }) {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex h-full flex-col justify-center p-8">
+        <div className="flex h-full flex-col justify-center p-8 border-l-2 border-violet-500">
           {children}
         </div>
       </div>
