@@ -13,7 +13,7 @@ function MobileMenuOverlay({ isOpen, onClose, children }) {
   return (
     <div
       className={`fixed inset-0 z-40 transform transition-all duration-300 ease-in-out md:hidden ${
-        isOpen ? "visible opacity-100" : "invisible opacity-0"
+        isOpen ? "opacity-100" : "opacity-0"
       }`}
     >
       <div
