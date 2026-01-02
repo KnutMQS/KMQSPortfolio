@@ -14,7 +14,7 @@ function Navbar() {
         <div className="flex-1">
           <Link
             to="/"
-            className="text-2xl font-bold text-transparent bg-clip-text bg-linear-to-r from-violet-500 to-fuchsia-500"
+            className="px-1 rounded-md focus:outline-none focus:ring-2 focus:ring-inset-2 focus:ring-blue-600 text-2xl font-bold text-transparent bg-clip-text bg-linear-to-r from-violet-500 to-fuchsia-500"
             onClick={closeMenu}
           >
             KMQS
