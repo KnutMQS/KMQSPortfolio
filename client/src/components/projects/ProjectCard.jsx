@@ -7,6 +7,7 @@ const ProjectCard = ({ title, imageSrc, imageAlt }) => {
       <img
         src={imageSrc}
         alt={imageAlt}
+        loading="lazy"
         className="w-auto h-auto rounded-3xl drop-shadow-[0_0_11px_rgba(162,28,175,1)]"
       />
     </div>
