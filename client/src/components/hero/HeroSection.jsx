@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex flex-col max-h-screen h-fit items-center justify-center px-6 pt-20 bg-bg overflow-hidden"
+      className="relative flex flex-col max-h-screen h-fit items-center justify-center px-6 pt-20 bg-bg"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-51 h-51 rounded-4xl bg-radial-[at_25%_25%] from-blue-800 to-teal-800 to-75% blur-3xl" />
       <HeroContent />
